@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Country Facts Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Country Explorer</h1>
+      <h4>Search a country and discover the world.</h4>
+
+      <form id="searchForm">
+        <input
+          type="text"
+          id="countryInput"
+          placeholder="Search for a country..."
+          required
+        />
+        <button type="submit" id="searchBtn">Search</button>
+      </form>
+
+      <div class="country-header">
+        <h2 id="country-name"></h2>
+        <img id="country-flag" class="flag" />
+      </div>
+      
+      <div id="facts"></div>
+
+      <p class="tip">
+        💡<strong>Tip:</strong> Search for a country using its common name. Try
+        Ethiopia, Canada, or Japan.
+      </p>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
